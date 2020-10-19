@@ -1,0 +1,123 @@
+*{margin: 0; padding: 0; box-sizing: border-box;font-family: 'Montserrat', sans-serif;}
+.header-Section{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient( #89f7fe , #66a6ff);
+    clip-path: polygon(0% 0%,100% 0%,100% 75%,0% 100%);
+}
+nav{
+    width: 100%;
+    height: 60px;
+    display: flex;
+}
+.logo{
+    width: 50%;
+    height: 100px;
+}
+.logo h1{
+    line-height: 100px;
+    padding-left: 50px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 30px;
+}
+.menu{
+    width: 50%;
+    height: 100px;
+}
+.menu ul{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu ul li{
+    list-style: none;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+    color:white;
+    position: relative;
+   
+}
+.menu li a::before{
+    content: "";
+    position: absolute;
+    top: 110%;
+    width: 0;
+    height: 2px;
+    border-bottom: 2px solid #4458dc;
+    transition: 0.4s linear;
+
+}
+.menu li a:hover::before{
+    width: 100%;
+}
+.upper-content{
+    display: flex;
+}
+.leftside{
+    width: 45%;
+    height: auto;
+    overflow: hidden;
+    margin-top: 30px;
+}
+.leftside img{
+    margin-left: 20px;
+    width: 700px;
+    height:auto ;
+}
+.rightside{
+    width: 55%;
+    height:300px;
+    color: white;
+    text-align: center;
+    margin-top: 120px;
+    padding: 40px;   
+}
+.rightside h2{
+    font-size: 48px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.rightside p{
+    font-size: 18px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+.rightside .btn-1{
+    font-size: 17px;
+    font-weight: 900;
+    color: #fff;
+    text-transform: uppercase;
+    background:linear-gradient( #89f7fe , #66a6ff);
+    border: 2px solid #fff;
+    padding: 8px 15px;
+    margin-right: 20px;
+    transition: 0.4s;
+
+}
+.rightside .btn-2{
+    font-size: 17px;
+    font-weight: 900;
+    color: #fff;
+    text-transform: uppercase;
+    background:transparent;
+    border: 3px solid #fff;
+    padding: 8px 20px;
+    transition: 0.4s;
+
+}
+.btn-1:hover{
+    background: white;
+    color: black;
+}
+.btn-2:hover{
+    background:#000;
+    color:white;
+}
